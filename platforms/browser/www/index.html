@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Taisty Restaurant Finder</title>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/8e98d3ef51.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOb-fMY2mNX3se_KITF29UpkW2rHSZD74"></script>
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Should it be menu or something else?</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Taisty</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+
+            
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <h3>Check out the Taiwanese restaurants near you!</h3>            
+                            <div class="wrap">
+                                            <div class="search">
+<!--                                            <input type="text" class="searchTerm" placeholder="Click to search">-->
+                                            <button onclick="showMap()" type="submit" class="searchButton">
+                                                <i class="fa fa-search" ></i>
+                                            </button>
+                                            </div>
+                                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+<!--
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                     Toolbar links 
+                    <a href="#" class="link">Left </a>
+                    <a href="#" class="link">Right </a>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
+<!--
+https://github.com/mapsplugin/cordova-plugin-googlemaps-doc
+https://github.com/apache/cordova-plugin-geolocation
+https://stackoverflow.com/questions/20579783/distance-between-two-locations-in-javascript
+https://cordova.apache.org/plugins/
+Google Maps JavaScript API
+AIzaSyCOb-fMY2mNX3se_KITF29UpkW2rHSZD74
+AIzaSyDYKpyGEKOSs0dAjYMCUnuQ2KPUolbS8HQ
+-->
