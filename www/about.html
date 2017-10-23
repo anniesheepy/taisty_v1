@@ -17,7 +17,12 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
 <!--        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOb-fMY2mNX3se_KITF29UpkW2rHSZD74"></script>-->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKpyGEKOSs0dAjYMCUnuQ2KPUolbS8HQ&libraries=places"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXvVbI3YY4G4xP0A350KDQNNpwIPuC13M&libraries=places"></script>
+<!--
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXvVbI3YY4G4xP0A350KDQNNpwIPuC13M&callback=initMap">
+    </script>
+-->
 </head>
 
 <body>
@@ -41,7 +46,7 @@
     <div data-page="about" class="page">
         <div class="page-content">
             <div class="content-block">
-                <button onclick="showshowMap()" type="submit" class="searchButton showshowMap"> Let's see where you are
+                <button onclick="initMap()" type="submit" class="searchButton showshowMap"> Let's see where you are
                                             </button>
                 <div id="map"></div>
                 <hr/>
